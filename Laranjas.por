@@ -4,9 +4,10 @@ programa {
     real laranjasF = 0
     real diferenca = 0 
 
-    laranjasI = 10000
-    laranjasF = 10000
-  
+    escreva("Quantas laranjas foram colhidas? : ")
+    leia(laranjasI)
+    escreva("Quantas laranjas sobraram? : ")
+    leia(laranjasF)
 
     diferenca = laranjasI - laranjasF
 
