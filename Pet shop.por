@@ -1,13 +1,17 @@
 programa {
   funcao inicio() {
-    real preco = 10
-    real kilo, grama 
+    real precoPorKilo = 10
+    real pesoPorGrama = precoPorKilo / 1000
+    real peso 
+    real precoTotal
 
-    escreva("Insira o peso desejado: ")
-    leia(kilo)
-    grama = kilo * 1000
-    preco = grama / 1000 * 10 
-    escreva("Peso em gramas: " + grama + "g")
-    escreva("\nPreço: R$" + preco)
+    escreva("Digite o peso(g): ")
+    leia(peso)
+
+    precoTotal = peso * pesoPorGrama
+
+    escreva("Valor a pagar: R$" + precoTotal)
+
+   
   }
 }
