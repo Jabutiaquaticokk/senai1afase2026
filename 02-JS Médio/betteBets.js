@@ -6,7 +6,7 @@ let lucro
 //entr
 fartura=Number(prompt("Quanto Faturou Hoje?"))
 premio=Number(prompt("Quanto pagou em premiações?"))
-presente=Number(prompt("Quanto Pafou as autoridades?"))
+presente=Number(prompt("Quanto Pagou as autoridades?"))
 comicoes=Number(prompt("Quanto pagou aos funcionarios?"))
 //proc
 lucro=fartura-premio-presente-comicoes
