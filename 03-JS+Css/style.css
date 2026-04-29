@@ -1,0 +1,45 @@
+body{
+    background-color: #0067c7;
+}
+
+h1{
+    background-color: #14213d;
+    
+    color: azure;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgb(00, 00, 00) ;
+}
+
+h2{
+    background-color: #fca311;
+    color: #000000;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+button{
+    background-color: #14213d;
+    color: #e5e5e5;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    
+}
+
+output{
+    padding: 5px;
+    background-color: #003f88;
+    color: #e5e5e5;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+div{
+    background-color: #003f88;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px ; ;
+}
