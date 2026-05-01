@@ -248,9 +248,9 @@ function testesGanso(){
     age=Number(prompt("Qual sua Idade?"))
     temRecmnds=prompt("Tens Recomendações?")
     //proc
-    if(age>=16 || sabeNadar=="sim"){
+    if(age>=16 && sabeNadar=="sim"){
         document.getElementById("resultado").innerHTML="Aprovado para o navio!"
-    }else if(sabeNadar=="não" || temRecmnds=="sim"){
+    }else if(sabeNadar=="não" && temRecmnds=="sim"){
             document.getElementById("resultado").innerHTML="Aprovado sob recomendação. Monitorar nas primeiras viagens"
         }else{
             document.getElementById("resultado").innerHTML="Reprovado. Volte quando estiver mais preparado para o mar."
