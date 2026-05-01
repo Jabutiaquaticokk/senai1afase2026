@@ -206,19 +206,18 @@ function sarumano(){
 }
 
 function tellesPreco(){
-        //info
-    let suply, ticket, items
-    let lucro, pct
-    //entr
-    suply=Number(prompt("Gastos com Suprimentos/Mercadorias?"))
-    ticket=Number(prompt("Lucro com ingressos?"))
-    items=Number(prompt("Lucro com Itens?"))
-    //proc
-    lucro=(ticket+items)-suply
-    pct=(lucro/suply)*100
-    //exit
+     
+    //info
+    let peso, distance, volume, frete
+    //entrada
+    peso=Number(prompt("Insira o Peso"))
+    distance=Number(prompt("Insira a Distância"))
+    volume=Number(prompt("Insira o volume"))
+    //process
+    frete=15+(2*peso)+(0.05*distance)+(10*volume)
+    //saidas
 
-    document.getElementById("resultado").innerHTML="Lucro : R$"+lucro+"\nLucro PCT: " + pct.toFixed(2)+"%"
+    document.getElementById("resultado").innerHTML="Frete: R$ "+frete
 }
 //SQ006
 
