@@ -259,3 +259,38 @@ function testesGanso(){
     
 
 }
+
+function misticSmoke(){
+    //info
+    let windSpeed, kids
+    //entr
+    kids=Number(prompt("Crianças Pequenas?"))
+    windSpeed=Number(prompt("Velocidade do Vento:"))
+    //exit
+    if(kids==0||windSpeed>=0.5){
+        document.getElementById("resultado").innerHTML="Fumaça liberada. Que comecem os mistérios!"
+    }else {
+        document.getElementById("resultado").innerHTML="Fumaça bloqueada. Aguardar condições ideais."
+    }
+}
+
+function deslocamento(){
+    let som, figurino
+
+
+}
+
+//SQ002
+
+
+function verificarIdade(){
+    let idade
+
+    idade=Number(prompt("Insira sua Idade:"))
+
+    if(idade>=18){
+        document.getElementById("resultado").innerHTML="Maior de Idade"
+    }else{
+        document.getElementById("resultado").innerHTML="Menor de idade"
+    }
+}
