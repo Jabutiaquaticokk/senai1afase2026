@@ -293,4 +293,44 @@ function verificarIdade(){
     }else{
         document.getElementById("resultado").innerHTML="Menor de idade"
     }
+    
+}
+
+function guess(){
+    let numero=Math.ceil(Math.random()*10)
+    let chute 
+    chute=Number(prompt("Diga um Número"))
+    if(chute==numero){
+        document.getElementById("resultado").innerHTML="Acertou"
+    }else{
+        document.getElementById("resultado").innerHTML="Errooou"
+    }
+    
+}
+
+function week(){
+    let diaS 
+
+    diaS=Number(prompt("Insira um número (1-7)"))
+    if(diaS==1){
+       document.getElementById("resultado").innerHTML="Domingo" 
+    }else if(diaS==2){
+        document.getElementById("resultado").innerHTML="Segunda"
+    }else if(diaS==3){
+        document.getElementById("resultado").innerHTML="Terça"
+    }else if(diaS==4){
+        document.getElementById("resultado").innerHTML="Quarta"
+    }else if(diaS==5){
+        document.getElementById("resultado").innerHTML="Quinta"
+    }else if(diaS==6){
+        document.getElementById("resultado").innerHTML="Sexta"
+    }else if(diaS==7){
+        document.getElementById("resultado").innerHTML="Sábado"
+    }else{
+       document.getElementById("resultado").innerHTML="A semana só tem 7 dias"  
+    }
+}
+
+function parImpar(){
+    
 }
