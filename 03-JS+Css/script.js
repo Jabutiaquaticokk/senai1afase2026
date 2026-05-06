@@ -369,3 +369,16 @@ function calculadora(){
 
     document.getElementById("resultado").innerHTML=(result) 
 }
+
+function numeros(){
+    let nA, nB 
+
+    nA=Number(prompt("Insira o Primeiro Número"))
+    nB=Number(prompt("Insira o Segundo Número"))
+
+    if(nA>nB){
+        document.getElementById("resultado").innerHTML= (nA+" é maior")
+    }else {
+        document.getElementById("resultado").innerHTML= (nB+" é maior")
+    }
+}
