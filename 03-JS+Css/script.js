@@ -1,4 +1,7 @@
-
+function segredo(){
+    alert("67")
+    open("https://www.jamanjo.com.br/")
+}
 // Atividades
 
 // Nivel Fácil
@@ -63,6 +66,8 @@ function pepequeno(){
     //Info
     let preco, qntd
     let troca
+    
+    // 67
     //Entrada
     qntd = Number(prompt("Insira Quantidade: "))
     preco = Number(prompt("Insira Valor: R$ "))
@@ -309,28 +314,58 @@ function guess(){
 }
 
 function week(){
-    let diaS 
+    let diaS, numero 
 
-    diaS=Number(prompt("Insira um número (1-7)"))
-    if(diaS==1){
-       document.getElementById("resultado").innerHTML="Domingo" 
-    }else if(diaS==2){
-        document.getElementById("resultado").innerHTML="Segunda"
-    }else if(diaS==3){
-        document.getElementById("resultado").innerHTML="Terça"
-    }else if(diaS==4){
-        document.getElementById("resultado").innerHTML="Quarta"
-    }else if(diaS==5){
-        document.getElementById("resultado").innerHTML="Quinta"
-    }else if(diaS==6){
-        document.getElementById("resultado").innerHTML="Sexta"
-    }else if(diaS==7){
-        document.getElementById("resultado").innerHTML="Sábado"
+    numero=Number(prompt("Insira um número (1-7)"))
+    if(numero==1){
+       diaS="Domingo" 
+    }else if(numero==2){
+        diaS="Segunda"
+    }else if(numero==3){
+        diaS="Terça"
+    }else if(numero==4){
+        diaS="Quarta"
+    }else if(numero==5){
+        diaS="Quinta"
+    }else if(numero==6){
+        diaS="Sexta"
+    }else if(numero==7){
+        diaS="Sábado"
     }else{
-       document.getElementById("resultado").innerHTML="A semana só tem 7 dias"  
+       diaS="A semana só tem 7 dias"  
     }
+    document.getElementById("resultado").innerHTML=(diaS)
 }
 
 function parImpar(){
-    
+    let num1=Number(prompt("Digite o número"))
+    let resposta
+    if(num1%2 === 0){
+        resposta="par"
+    }else{
+        resposta="impar"
+    }
+    document.getElementById("resultado").innerHTML=(resposta)
+}
+
+function calculadora(){
+    let n1, n2, result
+    let opera
+    n1=Number(prompt("Insira o primeiro numero"))
+    n2=Number(prompt("Insira o Segundo numero"))
+    opera=prompt("Insira uma  operação ( + , - , * , / )")
+
+    if(opera=="+"){
+        result=(n1+n2)
+    }else if(opera=="-"){
+        result=(n1-n2)
+    }else if(opera=="*"){
+        result=(n1*n2)
+    }else if(opera=="/"){
+        result=(n1/n2)
+    }else{
+        alert("Nenhum número/operação Inserida!")
+    }
+
+    document.getElementById("resultado").innerHTML=(result) 
 }
