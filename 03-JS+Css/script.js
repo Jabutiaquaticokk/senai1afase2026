@@ -1,6 +1,6 @@
 function segredo(){
     alert("67")
-    open("https://www.jamanjo.com.br/")
+    open("https://youtu.be/_P5vR9pz5Hc?si=2uv-hnz4ppOocHjx")
 }
 // Atividades
 
