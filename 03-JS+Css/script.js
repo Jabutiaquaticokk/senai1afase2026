@@ -382,3 +382,26 @@ function numeros(){
         document.getElementById("resultado").innerHTML= (nB+" é maior")
     }
 }
+
+//Desafios
+
+function starUber(){
+    //info
+    let distance
+    let time
+    //entrada
+    distance=Number(prompt("Insira a distância (km)"))
+    
+    //processo
+    time=distance/300000
+    //saída
+    document.getElementById("resultado").innerHTML= "Tempo esperado= "+time+"s"
+}
+
+function garcom(){
+
+}
+
+function garcomBonus(){
+
+}
