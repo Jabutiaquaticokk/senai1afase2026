@@ -30,7 +30,7 @@ function junin1(){
     days = Number(prompt("Insira os dias trabalhados: "))
     diary = Number((salary/days))
 
-    document.getElementById("resultado").innerHTML="Seu salário diario é de R$ "+ diary.toFixed(2)
+    document.getElementById("resultado").innerHTML="Seu salário diario é de R$ "+ diary.toFixed(2).replace('.',',')
 }
 
 function monika(){
@@ -157,7 +157,7 @@ function betteBets(){
     lucro=fartura-premio-presente-comicoes
     //outr
 
-    document.getElementById("resultado").innerHTML="Você Lucrou: R$ "+lucro
+    document.getElementById("resultado").innerHTML="Você Lucrou: R$ "+lucro.toFixed(2).replace('.',',')
 }
 
 function cptGanso(){
@@ -399,9 +399,47 @@ function starUber(){
 }
 
 function garcom(){
+    let prestacao, salario, emprestimo
+    let pctSalario
+    
+    salario=Number(prompt("Insira seu salário"))
+    prestacao=Number(prompt("Quantas prestações deseja pagar?"))
+    emprestimo=Number(prompt("Valor do emprestimo"))
+    if(salario<=0 || prestacao<=0 || emprestimo<=0){
+        document.getElementById("resultado").innerHTML= "Valores Inválidos"
+    }
 
+    pctSalario=salario*0.3
+
+    if(emprestimo<=pctSalario){
+        document.getElementById("resultado").innerHTML="Empréstimo Concedido"
+    }else {
+        document.getElementById("resultado").innerHTML= "Empréstimo Recusado"
+    }
 }
 
 function garcomBonus(){
+    let prestacao, salario, emprestimo
+    let pctSalario, aPagar
+    let juros 
 
+    salario=Number(prompt("Insira seu salário"))
+    alert("Será aplicado 2% de Juros sob o Valor do Empréstimo")
+    prestacao=Number(prompt("Quantas prestações deseja pagar?"))
+    emprestimo=Number(prompt("Valor do emprestimo"))
+    if(salario<=0 || prestacao<=0 || emprestimo<=0){
+        document.getElementById("resultado").innerHTML= "Valores Inválidos"
+    }
+    juros=(emprestimo*0.02)*prestacao
+    pctSalario=salario*0.3
+    if(prestacao>1){
+        aPagar=emprestimo+juros
+    }else{
+        aPagar=emprestimo
+    }
+    if(emprestimo<=pctSalario){
+        document.getElementById("resultado").innerHTML="Empréstimo Concedido<p>"+" A pagar: R$"+aPagar+"</p>"
+    }else {
+        document.getElementById("resultado").innerHTML= "Empréstimo Recusado, Valor Ultrapassa o limite"
+    }
 }
