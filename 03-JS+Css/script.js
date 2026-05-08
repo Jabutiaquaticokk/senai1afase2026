@@ -385,7 +385,23 @@ function numeros(){
 
 //Atividades refatoradas
 
+function tellesRef(){
+    let peso, distance, volume, frete
+    //entrada
+    peso=Number(prompt("Insira o Peso"))
+    distance=Number(prompt("Insira a Distância"))
+    volume=Number(prompt("Insira o volume"))
+    
+    //process
+    if(peso==0||distance==0||volume==0){
+        alert("Valores Invalidos")
+    }else{
+    frete=15+(2*peso)+(0.05*distance)+(10*volume)
+    }
+    //saidas
 
+    document.getElementById("resultado").innerHTML="Frete: R$ "+frete
+}
 
 //Desafios
 
@@ -447,3 +463,4 @@ function garcomBonus(){
         document.getElementById("resultado").innerHTML= "Empréstimo Recusado, Valor Ultrapassa o limite"
     }
 }
+
