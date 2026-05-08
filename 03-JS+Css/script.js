@@ -1,6 +1,6 @@
 function segredo(){
-    alert("67")
-    open("https://youtu.be/_P5vR9pz5Hc?si=2uv-hnz4ppOocHjx")
+    alert("Você foi peixado🐟")
+    open("https://spinning.fish/")
 }
 // Atividades
 
@@ -382,6 +382,10 @@ function numeros(){
         document.getElementById("resultado").innerHTML= (nB+" é maior")
     }
 }
+
+//Atividades refatoradas
+
+
 
 //Desafios
 
