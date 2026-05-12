@@ -18,7 +18,7 @@ function guilhermePortoes(){
     totalDEVS = clt + pj + estagiario
     //Saida
 
-    document.getElementById("resultado").innerHTML="Total devs: " + totalDEVS
+    document.getElementById("resultado1").innerHTML="Total devs: " + totalDEVS
 }
 
 function junin1(){
@@ -30,7 +30,7 @@ function junin1(){
     days = Number(prompt("Insira os dias trabalhados: "))
     diary = Number((salary/days))
 
-    document.getElementById("resultado").innerHTML="Seu salário diario é de R$ "+ diary.toFixed(2).replace('.',',')
+    document.getElementById("resultado1").innerHTML="Seu salário diario é de R$ "+ diary.toFixed(2).replace('.',',')
 }
 
 function monika(){
@@ -41,7 +41,7 @@ function monika(){
     n=Number(prompt("Quantas Vezes Usou o celular?"))
     chance = (0.1/(1+500* n))*100
 
-    document.getElementById("resultado").innerHTML="Sua chance é de " + chance.toFixed(5) + "%"
+    document.getElementById("resultado1").innerHTML="Sua chance é de " + chance.toFixed(5) + "%"
 }
 
 function peba(){
@@ -57,7 +57,7 @@ function peba(){
     points = wins * 3 + draw
     // saidas
     
-    document.getElementById("resultado").innerHTML="Total Pontos: " + points
+    document.getElementById("resultado1").innerHTML="Total Pontos: " + points
 
 }
 
@@ -75,7 +75,7 @@ function pepequeno(){
     troca = preco * qntd
     //Saida
     
-    document.getElementById("resultado").innerHTML="Valor em Troca: R$ " + troca.toFixed(2)
+    document.getElementById("resultado1").innerHTML="Valor em Troca: R$ " + troca.toFixed(2)
 }
 
 function peErnam(){
@@ -91,7 +91,7 @@ function peErnam(){
     faltante = (donate + dizimo) - gastos
     //Leave
     
-    document.getElementById("resultado").innerHTML="Saldo Final: R$ " + faltante.toFixed(2)
+    document.getElementById("resultado1").innerHTML="Saldo Final: R$ " + faltante.toFixed(2)
 
 }
 
@@ -106,7 +106,7 @@ function tellesTransp(){
     carga=pesoBruto-tara
     
 
-    document.getElementById("resultado").innerHTML="Peso da Carga : " + carga + "Kg"
+    document.getElementById("resultado1").innerHTML="Peso da Carga : " + carga + "Kg"
 }
 
 function trajPomar(){
@@ -121,7 +121,7 @@ function trajPomar(){
     vendas = laranjasI - laranjasF
     //Saida
     
-    document.getElementById("resultado").innerHTML="<p>Sobraram "+vendas+" laranjas"+"</p><p>Foram vendidas " +(laranjasI-vendas)+ " laranjas</p>" 
+    document.getElementById("resultado1").innerHTML="<p>Sobraram "+vendas+" laranjas"+"</p><p>Foram vendidas " +(laranjasI-vendas)+ " laranjas</p>" 
 }
 
 // Nivel Médio
@@ -137,8 +137,8 @@ function precoBrique(){
     alert("Venda por R$"+lucro+"\nRecebera R$"+(lucro-obra))
     console.log("Venda por R$"+lucro+"\nRecebera R$"+(lucro-obra))
 
-    // document.getElementById("resultado").innerHTML=("Venda por R$"+lucro+"<br>Recebera R$"+(lucro-obra))
-    document.getElementById("resultado").innerHTML="<p>Venda por R$"+lucro+"</p><p>Recebera R$"+(lucro-obra)+"</p>"
+    // document.getElementById("resultado2").innerHTML=("Venda por R$"+lucro+"<br>Recebera R$"+(lucro-obra))
+    document.getElementById("resultado2").innerHTML="<p>Venda por R$"+lucro+"</p><p>Recebera R$"+(lucro-obra)+"</p>"
 
 }
 
@@ -157,7 +157,7 @@ function betteBets(){
     lucro=fartura-premio-presente-comicoes
     //outr
 
-    document.getElementById("resultado").innerHTML="Você Lucrou: R$ "+lucro.toFixed(2).replace('.',',')
+    document.getElementById("resultado2").innerHTML="Você Lucrou: R$ "+lucro.toFixed(2).replace('.',',')
 }
 
 function cptGanso(){
@@ -173,7 +173,7 @@ function cptGanso(){
     pct=(lucro/suply)*100
     //exit
 
-    document.getElementById("resultado").innerHTML="Lucro : R$"+lucro+"\nLucro PCT: " + pct.toFixed(2)+"%"
+    document.getElementById("resultado2").innerHTML="Lucro : R$"+lucro+"\nLucro PCT: " + pct.toFixed(2)+"%"
 }
 
 function manoJuca(){
@@ -194,7 +194,7 @@ function manoJuca(){
     sobra=salario-(moradia+luz+agua+internet+stream+gas+tel+outros)
     //exit
 
-    document.getElementById("resultado").innerHTML="Sobrou R$ "+sobra+" pra gastar esse mes ;>"
+    document.getElementById("resultado2").innerHTML="Sobrou R$ "+sobra+" pra gastar esse mes ;>"
 }
 
 function sarumano(){
@@ -207,7 +207,7 @@ function sarumano(){
     //proc
     custoTotal=(precoUnit*bombas)*shows
     //exit
-    document.getElementById("resultado").innerHTML="Custo total: R$ "+custoTotal
+    document.getElementById("resultado2").innerHTML="Custo total: R$ "+custoTotal
 }
 
 function tellesPreco(){
@@ -222,7 +222,7 @@ function tellesPreco(){
     frete=15+(2*peso)+(0.05*distance)+(10*volume)
     //saidas
 
-    document.getElementById("resultado").innerHTML="Frete: R$ "+frete
+    document.getElementById("resultado2").innerHTML="Frete: R$ "+frete
 }
 //SQ006
 
@@ -238,9 +238,9 @@ function verificarProvis(){
     //exit
    
     if(marujos>=10 && foodperppl>=1.5){
-        document.getElementById("resultado").innerHTML="Segue Viajem"
+        document.getElementById("resultado4").innerHTML="Segue Viajem"
     }else{
-        document.getElementById("resultado").innerHTML="Não rola"
+        document.getElementById("resultado4").innerHTML="Não rola"
     }
 
 }
@@ -254,11 +254,11 @@ function testesGanso(){
     temRecmnds=prompt("Tens Recomendações?")
     //proc
     if(age>=16 && sabeNadar=="sim"){
-        document.getElementById("resultado").innerHTML="Aprovado para o navio!"
+        document.getElementById("resultado4").innerHTML="Aprovado para o navio!"
     }else if(sabeNadar=="não" && temRecmnds=="sim"){
-            document.getElementById("resultado").innerHTML="Aprovado sob recomendação. Monitorar nas primeiras viagens"
+            document.getElementById("resultado4").innerHTML="Aprovado sob recomendação. Monitorar nas primeiras viagens"
         }else{
-            document.getElementById("resultado").innerHTML="Reprovado. Volte quando estiver mais preparado para o mar."
+            document.getElementById("resultado4").innerHTML="Reprovado. Volte quando estiver mais preparado para o mar."
         }
 
     
@@ -273,9 +273,9 @@ function misticSmoke(){
     windSpeed=Number(prompt("Velocidade do Vento:"))
     //exit
     if(kids==0||windSpeed>=0.5){
-        document.getElementById("resultado").innerHTML="Fumaça liberada. Que comecem os mistérios!"
+        document.getElementById("resultado4").innerHTML="Fumaça liberada. Que comecem os mistérios!"
     }else {
-        document.getElementById("resultado").innerHTML="Fumaça bloqueada. Aguardar condições ideais."
+        document.getElementById("resultado4").innerHTML="Fumaça bloqueada. Aguardar condições ideais."
     }
 }
 
@@ -294,9 +294,9 @@ function verificarIdade(){
     idade=Number(prompt("Insira sua Idade:"))
 
     if(idade>=18){
-        document.getElementById("resultado").innerHTML="Maior de Idade"
+        document.getElementById("resultado3").innerHTML="Maior de Idade"
     }else{
-        document.getElementById("resultado").innerHTML="Menor de idade"
+        document.getElementById("resultado3").innerHTML="Menor de idade"
     }
     
 }
@@ -306,9 +306,9 @@ function guess(){
     let chute 
     chute=Number(prompt("Diga um Número"))
     if(chute==numero){
-        document.getElementById("resultado").innerHTML="Acertou"
+        document.getElementById("resultado3").innerHTML="Acertou"
     }else{
-        document.getElementById("resultado").innerHTML="Errooou"
+        document.getElementById("resultado3").innerHTML="Errooou"
     }
     
 }
@@ -334,7 +334,7 @@ function week(){
     }else{
        diaS="A semana só tem 7 dias"  
     }
-    document.getElementById("resultado").innerHTML=(diaS)
+    document.getElementById("resultado3").innerHTML=(diaS)
 }
 
 function parImpar(){
@@ -345,7 +345,7 @@ function parImpar(){
     }else{
         resposta="impar"
     }
-    document.getElementById("resultado").innerHTML=(resposta)
+    document.getElementById("resultado3").innerHTML=(resposta)
 }
 
 function calculadora(){
@@ -367,7 +367,7 @@ function calculadora(){
         alert("Nenhum número/operação Inserida!")
     }
 
-    document.getElementById("resultado").innerHTML=(result) 
+    document.getElementById("resultado3").innerHTML=(result) 
 }
 
 function numeros(){
@@ -377,9 +377,9 @@ function numeros(){
     nB=Number(prompt("Insira o Segundo Número"))
 
     if(nA>nB){
-        document.getElementById("resultado").innerHTML= (nA+" é maior")
+        document.getElementById("resultado3").innerHTML= (nA+" é maior")
     }else {
-        document.getElementById("resultado").innerHTML= (nB+" é maior")
+        document.getElementById("resultado3").innerHTML= (nB+" é maior")
     }
 }
 
@@ -400,7 +400,52 @@ function tellesRef(){
     }
     //saidas
 
-    document.getElementById("resultado").innerHTML="Frete: R$ "+frete
+    document.getElementById("resultado6").innerHTML="Frete: R$ "+frete
+}
+
+function betteRef(){
+    //info
+    let fartura
+    let premio, presente, comicoes
+    let lucro, meta, mensage
+    //entr
+    meta=Number(prompt("Qual a meta do Mês?"))
+    fartura=Number(prompt("Quanto Faturou Hoje?"))
+    premio=Number(prompt("Quanto pagou em premiações?"))
+    presente=Number(prompt("Quanto Pagou as autoridades?"))
+    comicoes=Number(prompt("Quanto pagou aos funcionarios?"))
+    //proc
+    
+    lucro=fartura-premio-presente-comicoes
+    if(meta>=lucro){
+        mensage="Bateu a Meta"
+    }else{
+        mensage="Não bateu a Meta"
+    }
+    //outr
+
+    document.getElementById("resultado6").innerHTML="Fartura: R$"+fartura.toFixed(2).replace('.',',')+"<br>"+"Premiações: R$"+premio.toFixed(2).replace('.',',')+"<br>"+"Presentes: R$"+presente.toFixed(2).replace('.',',')+"<br>"+"Comissões: R$"+comicoes.toFixed(2).replace('.',',')+"<br>"+"Lucro: R$ "+lucro.toFixed(2).replace('.',',')+"<br>"+mensage
+}
+
+function pepequenoRef(){
+    alert("Bem Vindo a Pé Pequeno!")
+    //Info
+    let preco, qntd
+    let troca
+    
+    //Entrada
+    qntd = Number(prompt("Insira Quantidade: "))
+    preco = Number(prompt("Insira Valor: R$ "))
+    //Process
+    troca = preco * qntd
+    //Saida
+    if(qntd==0||preco==0){
+        document.getElementById("resultado6").innerHTML="Valores invalidos"
+    }else if(qntd>100){
+        document.getElementById("resultado6").innerHTML="Entrar em contato com a loja" 
+    }else{
+        document.getElementById("resultado6").innerHTML="Valor em Troca: R$ " + troca.toFixed(2)
+    }
 }
 
 //Desafios
@@ -408,14 +453,37 @@ function tellesRef(){
 function starUber(){
     //info
     let distance
-    let time
+    let time, minute, hour, days, months, years
     //entrada
     distance=Number(prompt("Insira a distância (km)"))
     
     //processo
     time=distance/300000
+    
     //saída
-    document.getElementById("resultado").innerHTML= "Tempo esperado= "+time+"s"
+    document.getElementById("resultado5").innerHTML= "Tempo esperado= "+time.toFixed(3)+"s"
+    //2a etapa
+    if(time>=60){
+       minute=time/60
+       document.getElementById("resultado5").innerHTML+= "<br>"+" ou= "+minute.toFixed(2)+"min"
+    }
+    if(time>=60){
+        hour=minute/60
+        
+       document.getElementById("resultado5").innerHTML+= "<br>"+" ou= "+hour.toFixed(2)+"h"
+    }
+    if(hour>=24){
+        days=hour/24
+        document.getElementById("resultado5").innerHTML+= "<br>"+" ou= "+days.toFixed(0)+" dias"
+    }
+    if(days>30){
+        months=days/30
+        document.getElementById("resultado5").innerHTML+= "<br>"+" ou= "+months.toFixed(0)+" meses"
+    }
+    if(months>12){
+        years=months/12
+        document.getElementById("resultado5").innerHTML+= "<br>"+" ou= "+years.toFixed(0)+" anos"
+    }
 }
 
 function garcom(){
@@ -426,15 +494,15 @@ function garcom(){
     prestacao=Number(prompt("Quantas prestações deseja pagar?"))
     emprestimo=Number(prompt("Valor do emprestimo"))
     if(salario<=0 || prestacao<=0 || emprestimo<=0){
-        document.getElementById("resultado").innerHTML= "Valores Inválidos"
+        document.getElementById("resultado5").innerHTML= "Valores Inválidos"
     }
 
     pctSalario=salario*0.3
 
     if(emprestimo<=pctSalario){
-        document.getElementById("resultado").innerHTML="Empréstimo Concedido"
+        document.getElementById("resultado5").innerHTML="Empréstimo Concedido"
     }else {
-        document.getElementById("resultado").innerHTML= "Empréstimo Recusado"
+        document.getElementById("resultado5").innerHTML= "Empréstimo Recusado"
     }
 }
 
@@ -448,7 +516,7 @@ function garcomBonus(){
     prestacao=Number(prompt("Quantas prestações deseja pagar?"))
     emprestimo=Number(prompt("Valor do emprestimo"))
     if(salario<=0 || prestacao<=0 || emprestimo<=0){
-        document.getElementById("resultado").innerHTML= "Valores Inválidos"
+        document.getElementById("resultado5").innerHTML= "Valores Inválidos"
     }
     juros=(emprestimo*0.02)*prestacao
     pctSalario=salario*0.3
@@ -458,9 +526,9 @@ function garcomBonus(){
         aPagar=emprestimo
     }
     if(emprestimo<=pctSalario){
-        document.getElementById("resultado").innerHTML="Empréstimo Concedido<p>"+" A pagar: R$"+aPagar+"</p>"
+        document.getElementById("resultado5").innerHTML="Empréstimo Concedido<p>"+" A pagar: R$"+aPagar+"</p>"
     }else {
-        document.getElementById("resultado").innerHTML= "Empréstimo Recusado, Valor Ultrapassa o limite"
+        document.getElementById("resultado5").innerHTML= "Empréstimo Recusado, Valor Ultrapassa o limite"
     }
 }
 
