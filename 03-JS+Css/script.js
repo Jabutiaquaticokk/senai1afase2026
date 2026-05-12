@@ -448,6 +448,66 @@ function pepequenoRef(){
     }
 }
 
+function guiPortoesRef(){
+    //Info
+    let clt, pj, estagiario
+    let totalDEVS, regra
+    //Entrada
+    clt = Number(prompt("Quantos CLT's tem na equipe?"))
+    pj = Number(prompt("Quantos PJ's tem na equipe?"))
+    estagiario = Number(prompt("Quantos Estagiarios tem na Equipe?"))
+    //Processo
+    totalDEVS = clt + pj + estagiario
+    if(clt>=(pj+estagiario)){
+        regra=" Dentro das regularidades"
+    }else{
+        regra=" Precisamos de uma maior força CLT"
+    }
+    //Saida
+
+    document.getElementById("resultado6").innerHTML="Total devs: " + totalDEVS+"<br>"+" CLTs: "+clt+"<br>"+" PJs: "+pj+"<br>"+" Estagiários: "+estagiario+"<br>"+regra
+}
+
+function pomarRef(){
+    //Info
+    let laranjasI, laranjasF
+    let vendas, aviso
+    //Entr
+    laranjasI = Number(prompt("Quantas laranjas foram enviadas?"))
+    laranjasF = Number(prompt("Quantas laranjas foram Vendidas?"))
+    //Procs
+    vendas = laranjasI - laranjasF
+    if(vendas==0){
+        aviso="O estoque deve ser maior no próximo dia."
+    }else{
+        aviso="Estoque Suficiente."
+    }
+    //Saida
+    
+    document.getElementById("resultado6").innerHTML="Sobraram "+vendas+" laranjas"+"<p>Foram vendidas " +(laranjasI-vendas)+ " laranjas</p>"+"<br>"+aviso
+}
+
+function nambucoRef(){
+     //Info
+    let gastos
+    let donate, dizimo
+    let faltante, aviso
+    //Enter
+    gastos = Number(prompt("Quanto foi gasto esse mês?"))
+    donate = Number(prompt("Quanto Recebemos de doações?"))
+    dizimo = Number(prompt("Quanto foi recebido de Dizimo?"))
+    //Procs
+    faltante = (donate + dizimo) - gastos
+    if(faltante<gastos){
+        aviso="Lembrarais para que vossos irmãos contribuam."
+    }else{
+        aviso="Meta atingida, divida paga."
+    }
+    //Leave
+    
+    document.getElementById("resultado6").innerHTML="Saldo Final: R$ " + faltante.toFixed(2)+"<br>"+aviso
+}
+
 //Desafios
 
 function starUber(){
