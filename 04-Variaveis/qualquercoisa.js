@@ -19,12 +19,13 @@ function harryPloter(){
     total=total+valor
     console.log(valor)
     document.getElementById('p-total').innerHTML="Total venda R$"+total.toFixed(2)
+    document.getElementById('listaVenda').innerHTML+="R$"+valor.toFixed(2)+'<br>'
     document.getElementById('inputVenda').value=''
     document.getElementById('inputVenda').focus()
 }
 
 function dado(){
-
+    
 }
 
 
