@@ -100,3 +100,6 @@ function reset(){
 function peixe(){
     open('https://spinning.fish/')
 }
+
+// Jogo do Dino
+
