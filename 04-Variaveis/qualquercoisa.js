@@ -23,10 +23,49 @@ function harryPloter(){
     document.getElementById('inputVenda').value=''
     document.getElementById('inputVenda').focus()
 }
+// Math.ceil(Math.random()*10)
+let round=0
+let pontos=0
+let rolagens=0
 
-function dado(){
-    
+function dado4(){
+    let numero=Math.ceil(Math.random()*4)
+    round=numero
+    pontos=pontos+numero
+    rolagens=rolagens+1
+    document.getElementById('p-numerodado').innerHTML="d4 = "+round
+    document.getElementById('p-pontos').innerHTML=pontos+' pontos'
+    document.getElementById('p-rolagens').innerHTML=rolagens+' rolagens'
+    document.getElementById('numeros').innerHTML+="d4 "+numero+'<br>'
 }
+
+function dado6(){
+    let numero=Math.ceil(Math.random()*6)
+    round=numero
+    pontos=pontos+numero
+    document.getElementById('p-numerodado').innerHTML="d6 = "+round
+    document.getElementById('p-pontos').innerHTML=pontos+' pontos'
+    document.getElementById('numeros').innerHTML+="d6 "+numero+'<br>'
+}
+
+function dado10(){
+    let numero=Math.ceil(Math.random()*10)
+    round=numero
+    pontos=pontos+numero
+    document.getElementById('p-numerodado').innerHTML="d10 = "+round
+    document.getElementById('p-pontos').innerHTML=pontos+' pontos'
+    document.getElementById('numeros').innerHTML+="d10 "+numero+'<br>'
+}
+
+function dado12(){
+    let numero=Math.ceil(Math.random()*12)
+    round=numero
+    pontos=pontos+numero
+    document.getElementById('p-numerodado').innerHTML="d12 = "+round
+    document.getElementById('p-pontos').innerHTML=pontos+' pontos'
+    document.getElementById('numeros').innerHTML+="d12 "+numero+'<br>'
+}
+
 
 
 
