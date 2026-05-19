@@ -13,15 +13,32 @@
 
 // funcao1()
 // funcao2()
+let total = 0
+function harryPloter(){
+    let valor=Number(document.getElementById('inputVenda').value)
+    total=total+valor
+    console.log(valor)
+    document.getElementById('p-total').innerHTML="Total venda R$"+total.toFixed(2)
+    document.getElementById('inputVenda').value=''
+    document.getElementById('inputVenda').focus()
+}
+
+function dado(){
+
+}
+
+
+
 let cont = 0
 function incrCount(){
     
-    cont=cont+1
+    // cont=cont+1
+    cont++
     document.getElementById("p-contagem").innerHTML=cont
 }
 
 function decrCount(){
-    cont=cont-1
+    cont--
     document.getElementById("p-contagem").innerHTML=cont
 }
 
