@@ -43,27 +43,33 @@ function dado6(){
     let numero=Math.ceil(Math.random()*6)
     round=numero
     pontos=pontos+numero
+    rolagens=rolagens+1
     document.getElementById('p-numerodado').innerHTML="d6 = "+round
     document.getElementById('p-pontos').innerHTML=pontos+' pontos'
     document.getElementById('numeros').innerHTML+="d6 "+numero+'<br>'
+    document.getElementById('p-rolagens').innerHTML=rolagens+' rolagens'
 }
 
 function dado10(){
     let numero=Math.ceil(Math.random()*10)
     round=numero
     pontos=pontos+numero
+    rolagens=rolagens+1
     document.getElementById('p-numerodado').innerHTML="d10 = "+round
     document.getElementById('p-pontos').innerHTML=pontos+' pontos'
     document.getElementById('numeros').innerHTML+="d10 "+numero+'<br>'
+    document.getElementById('p-rolagens').innerHTML=rolagens+' rolagens'
 }
 
 function dado12(){
     let numero=Math.ceil(Math.random()*12)
     round=numero
     pontos=pontos+numero
+    rolagens=rolagens+1
     document.getElementById('p-numerodado').innerHTML="d12 = "+round
     document.getElementById('p-pontos').innerHTML=pontos+' pontos'
     document.getElementById('numeros').innerHTML+="d12 "+numero+'<br>'
+    document.getElementById('p-rolagens').innerHTML=rolagens+' rolagens'
 }
 
 
@@ -102,4 +108,12 @@ function peixe(){
 }
 
 // Jogo do Dino
+let dinos=['Espinossauro', 'T-Rex', 'Braquiossauro', 'Velocirraptor', 'Estegossauro', 'Triceratopo', 'Anquilossauro', 'Alossauro', 'Parassaurolofo', 'Carnotauro']
+const btnDado=document.getElementById("btn-dado")
+let escolha
+let aleatorio=Math.floor(Math.random() * dinos.length)
+let resultado=dinos[aleatorio]
+console.log(resultado)
+
+
 
