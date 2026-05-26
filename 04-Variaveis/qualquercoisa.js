@@ -24,55 +24,27 @@ function harryPloter(){
     document.getElementById('inputVenda').focus()
 }
 // Math.ceil(Math.random()*10)
-let round=0
-let pontos=0
-let rolagens=0
 
-function dado4(){
-    let numero=Math.ceil(Math.random()*4)
-    round=numero
-    pontos=pontos+numero
-    rolagens=rolagens+1
-    document.getElementById('p-numerodado').innerHTML="d4 = "+round
-    document.getElementById('p-pontos').innerHTML=pontos+' pontos'
-    document.getElementById('p-rolagens').innerHTML=rolagens+' rolagens'
-    document.getElementById('numeros').innerHTML+="d4 "+numero+'<br>'
+let totalRolado = 0
+let contD = 0
+
+//...
+function rolarDado(numero){
+    // console.log(numero);
+    let dado = Math.ceil(Math.random()*numero)
+    document.getElementById('historico').innerHTML += '<span>d' + numero + ':' + dado + '</span>'
+    // contarRolagem(numero)
+    document.getElementById('outputUltima').innerHTML = dado
+    totalRolado += dado
+    document.getElementById('outputTotal').innerHTML = totalRolado
 }
 
-function dado6(){
-    let numero=Math.ceil(Math.random()*6)
-    round=numero
-    pontos=pontos+numero
-    rolagens=rolagens+1
-    document.getElementById('p-numerodado').innerHTML="d6 = "+round
-    document.getElementById('p-pontos').innerHTML=pontos+' pontos'
-    document.getElementById('numeros').innerHTML+="d6 "+numero+'<br>'
-    document.getElementById('p-rolagens').innerHTML=rolagens+' rolagens'
+function resetar() {
+    totalRolado = 0
+    document.getElementById('outputUltima').innerHTML = 'Não jogou ainda'
+    document.getElementById('outputTotal').innerHTML = 0
+
 }
-
-function dado10(){
-    let numero=Math.ceil(Math.random()*10)
-    round=numero
-    pontos=pontos+numero
-    rolagens=rolagens+1
-    document.getElementById('p-numerodado').innerHTML="d10 = "+round
-    document.getElementById('p-pontos').innerHTML=pontos+' pontos'
-    document.getElementById('numeros').innerHTML+="d10 "+numero+'<br>'
-    document.getElementById('p-rolagens').innerHTML=rolagens+' rolagens'
-}
-
-function dado12(){
-    let numero=Math.ceil(Math.random()*12)
-    round=numero
-    pontos=pontos+numero
-    rolagens=rolagens+1
-    document.getElementById('p-numerodado').innerHTML="d12 = "+round
-    document.getElementById('p-pontos').innerHTML=pontos+' pontos'
-    document.getElementById('numeros').innerHTML+="d12 "+numero+'<br>'
-    document.getElementById('p-rolagens').innerHTML=rolagens+' rolagens'
-}
-
-
 
 
 let cont = 0

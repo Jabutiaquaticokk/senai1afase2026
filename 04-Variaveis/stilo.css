@@ -67,3 +67,18 @@ section{
     background-color: var(--onyx);
     border-radius: 15px;
 }
+
+span{
+    padding: 5px;
+    margin: 5px;
+    background-color: var(--jet-black);
+    border-radius: 5px;
+}
+
+#historico{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

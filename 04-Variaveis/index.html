@@ -23,51 +23,47 @@
     <hr>
     <section>
     <p>
-        <h2>O copo de dados v2</h2>
-        <p id="p-numerodado">
-            Numeros aparecerão Aqui
-        </p>
-        <p id="p-pontos">
-            0
-        </p>
-        <p id="p-rolagens">
-            
-        </p>
-        <button onclick="dado4()">d4</button>
-        <button onclick="dado6()">d6</button>
-        <button onclick="dado10()">d10</button>
-        <button onclick="dado12()">d12</button>
-        <div id="numeros"></div>
-    </p>
-    <hr>
+        
     <p>
         <h2>O copo de dados</h2>
-        <p id="p-numerodado">
-            Numeros aparecerão Aqui
-        </p>
-        <p id="p-pontos">
-            0
-        </p>
-        <p id="p-rolagens">
-            
-        </p>
-        <button onclick="dado4()">d4</button>
-        <button onclick="dado6()">d6</button>
-        <button onclick="dado10()">d10</button>
-        <button onclick="dado12()">d12</button>
-        <div id="numeros"></div>
+        <div>
+        Total das rolagens: <output id="outputTotal">0</output>
+        <button onclick="resetar()">Reset</button>
+    </div>
+
+    <div>
+        Última rolagem: <output id="outputUltima">Não jogou ainda</output>
+    </div>
+    <div id="dados">
+
+    </div>
+    <div>
+        <button onclick="rolarDado(2)">d2</button>
+        <button onclick="rolarDado(4)">d4</button>
+        <button onclick="rolarDado(6)">d6</button>
+        <button onclick="rolarDado(8)">d8</button>
+        <button onclick="rolarDado(10)">d10</button>
+        <button onclick="rolarDado(12)">d12</button>
+        <button onclick="rolarDado(20)">d20</button>
+        <button onclick="rolarDado(100)">d100</button>
+        <button onclick="rolarDado(129)">d129</button>
+        <button onclick="rolarDado(1000)">d1000</button>
+    </div>
+    <div id="historico">
+
+    </div>
     </p>
     </section>
     <hr>
     <section>
     <h2>Contador Simples</h2>
-    <button onclick="incrCount()">+</button>
-    <button onclick="maisdez()">+10</button>
+        <button onclick="incrCount()">+</button>
+        <button onclick="maisdez()">+10</button>
     <p id="p-contagem">
         0         
     </p>
-    <button onclick="decrCount()">-</button>
-    <button onclick="menossdez()">-10</button>
+        <button onclick="decrCount()">-</button>
+        <button onclick="menossdez()">-10</button>
     <p>
         <button onclick="reset()">Reset</button>
         <button onclick="peixe()">Peixe</button>
@@ -80,16 +76,16 @@
     Valor da aposta R$ 
     <input type="text">
     <p></p>
-    <button class="btn-dado">Espinossauro</button>
-    <button class="btn-dado">T-Rex</button>
-    <button class="btn-dado">Braquiossauro</button>
-    <button class="btn-dado">Velocirraptor</button>
-    <button class="btn-dado">Estegossauro</button>
-    <button class="btn-dado">Triceratopo</button>
-    <button class="btn-dado">Anquilossauro</button>
-    <button class="btn-dado">Alossauro</button>
-    <button class="btn-dado">Parassaurolofo</button>
-    <button class="btn-dado">Carnotauro</button>
+        <button class="btn-dado">Espinossauro</button>
+        <button class="btn-dado">T-Rex</button>
+        <button class="btn-dado">Braquiossauro</button>
+        <button class="btn-dado">Velocirraptor</button>
+        <button class="btn-dado">Estegossauro</button>
+        <button class="btn-dado">Triceratopo</button>
+        <button class="btn-dado">Anquilossauro</button>
+        <button class="btn-dado">Alossauro</button>
+        <button class="btn-dado">Parassaurolofo</button>
+        <button class="btn-dado">Carnotauro</button>
     <p>!!Resultados!!</p>
     <p id="p-seudino">Seu dino:</p>
     <p id="p-dinosorteado">Dino Sorteado:</p>
