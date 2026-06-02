@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do dino</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Jogo do Dino🦖🦕<button onclick="financa()" id="segredo">🤑</button></h1>
+    <label for="">Valor da aposta R$</label><input type="text" id="denero">
+    <div id="dinos">
+        <button onclick="escolherDino(0)">Espinossauro</button>
+        <button onclick="escolherDino(1)">T-Rex</button>
+        <button onclick="escolherDino(2)">Braquiossauro</button>
+        <button onclick="escolherDino(3)">Velocirraptor</button>
+        <button onclick="escolherDino(4)">Estegossauro</button>
+        <button onclick="escolherDino(5)">Triceratopo</button>
+        <button onclick="escolherDino(6)">Anquilossauro</button>
+        <button onclick="escolherDino(7)">Carnotauro</button>
+        <button onclick="escolherDino(8)">Alossauro</button>
+        <button onclick="escolherDino(9)">Parassaurolofo</button>
+    </div>
+    <div>
+        <h2>!!Resultado!!</h2>
+        <p>Seu dino: <output id="outdinoSelect"></output></p>
+        <p>Dino sorteado: <output id="outdinoSorteio"></output></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

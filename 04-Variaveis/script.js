@@ -79,13 +79,7 @@ function peixe(){
     open('https://spinning.fish/')
 }
 
-// Jogo do Dino
-let dinos=['Espinossauro', 'T-Rex', 'Braquiossauro', 'Velocirraptor', 'Estegossauro', 'Triceratopo', 'Anquilossauro', 'Alossauro', 'Parassaurolofo', 'Carnotauro']
-const btnDado=document.getElementById("btn-dado")
-let escolha
-let aleatorio=Math.floor(Math.random() * dinos.length)
-let resultado=dinos[aleatorio]
-console.log(resultado)
+
 
 
 
