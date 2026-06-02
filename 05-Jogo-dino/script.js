@@ -19,6 +19,8 @@ function escolherDino(n){
 
     console.log(convertDino(dinoEscolhido))
     console.log(convertDino(dinoSorteado))
+    document.getElementById("outdinoSelect").innerHTML=convertDino(dinoEscolhido)
+    document.getElementById("outdinoSorteio").innerHTML=convertDino(dinoSorteado)
 }
 
 function convertDino(n){
@@ -38,11 +40,11 @@ function convertDino(n){
      }else if(n==6){
         dino='Anquilossauro'
      }else if(n==7){
-        dino='Alossauro'
-     }else if(n==8){
-        dino='Parassaurolofo'
-     }else if(n==9){
         dino='Carnotauro'
+     }else if(n==8){
+        dino='Alossauro'
+     }else if(n==9){
+        dino='Parassaurolofo'
      }
 
      return(dino)
