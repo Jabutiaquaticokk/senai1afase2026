@@ -104,11 +104,27 @@ input{
 .btn3{
     background-color: chocolate;
     gap: 5px;
+    transition: 250ms;
 }
 
 .btn3:hover{
-    transform: scale(1.1) rotate(10deg);
+    transform: scale(1.1) rotate(372deg);
     background-color: burlywood;
+    font-family: fantasy;
+    gap: 5px;
+}
+
+.btn4{
+    background-color: rgb(255, 255, 255);
+    color: #3aa5d3;
+    gap: 5px;
+    transition: 5000000000ms;
+}
+
+.btn4:hover{
+    transform: scale(1.1) rotate(36000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000deg);
+    background-color: burlywood;
+    box-shadow: #ffffff 20px 20px 100px 200px;
     font-family: fantasy;
     gap: 5px;
 }
