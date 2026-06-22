@@ -89,10 +89,12 @@ function atv5(){
 }
 
 function atv6(){
-    let n=-1
+    let n=0
     while(n<20){
-        n=n+2
+        n++
+        if(n%2 != 0){
         document.getElementById('total').innerHTML+=n+'<br>'
+        }
     }
     document.getElementById('total').innerHTML+='<hr>'
 }
@@ -127,6 +129,49 @@ function atv8(){
         }
         n=n-1
     }
+
+}
+
+function atv9(){
+    let n=0
+    while(n<100){
+        n++
+        if(n%3 != 0){
+            document.getElementById('total').innerHTML+=n+'<br>'
+        }else {
+            document.getElementById('total').innerHTML+='Fizz'+'<br>'
+            
+        }
+    }
+}
+
+function atv10(){
+
+
+let n=0
+let soma=0
+while(n<10){
+    n++
+    let d=1
+    d=1/n
+    // alert(d)
+    soma=soma+d
+    // alert(soma)
+    
+}
+document.getElementById('total').innerHTML= soma
+
+}
+
+function atv11(){
+    let n=0
+    let s=0
+    while(s<n){
+        s++
+    }
+}
+
+function atv12(){
     
 }
 //BOTÃO DE RESET
