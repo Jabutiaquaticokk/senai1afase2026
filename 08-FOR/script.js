@@ -116,5 +116,15 @@ function atv13(){
 }
 
 function atv14(){
-
+    let i=0
+    let palavra=prompt('insira uma palavra')
+    palavra.length
+    for(let o=0;o<palavra.length;o++){
+        palavra[o]
+        if(palavra[o]=='o'||palavra[o]=='O'){
+           
+           i++
+        }
+    }
+    document.getElementById('total').innerHTML='Tem '+i+' letras O na palavra'
 }
