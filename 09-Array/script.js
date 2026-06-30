@@ -78,7 +78,7 @@ function precose(){
 
 function produto(){
     for(let i=0;i<produtos.length;i++){
-        document.getElementById('precos').innerHTML+='<p class="produtos">'+produtos[i]+'</p>'
+        document.getElementById('precos').innerHTML+='<p class="produtos">'+i+'° :'+produtos[i]+'</p>'
     }
 
 }
