@@ -1,0 +1,7 @@
+.produtos{
+    border: 1px red;
+    color: aliceblue;
+}
+#precos{
+    display: flex;
+}

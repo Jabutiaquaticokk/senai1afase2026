@@ -69,7 +69,7 @@ function precose(){
     console.log(precos);
     document.getElementById('precos').innerHTML=' '
     for(let i=0;i<precos.length;i++){
-        document.getElementById('precos').innerHTML+=precos[i]+'<br>'
+        document.getElementById('precos').innerHTML+='<p class="produtos">'+precos[i]+'</p>'
         
     }
         
