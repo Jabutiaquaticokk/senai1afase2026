@@ -69,7 +69,7 @@ function precose(){
     console.log(precos);
     document.getElementById('precos').innerHTML=' '
     for(let i=0;i<precos.length;i++){
-        document.getElementById('precos').innerHTML+='<p class="produtos">'+precos[i]+'</p>'
+        document.getElementById('precos').innerHTML+=precos[i]+'<br>'
         
     }
         
@@ -78,7 +78,7 @@ function precose(){
 
 function produto(){
     for(let i=0;i<produtos.length;i++){
-        document.getElementById('precos').innerHTML+=produtos[i]+'<br>'
+        document.getElementById('precos').innerHTML+='<p class="produtos">'+produtos[i]+'</p>'
     }
 
 }

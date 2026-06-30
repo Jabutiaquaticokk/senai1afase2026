@@ -1,6 +1,7 @@
 .produtos{
     border: 1px red;
-    color: aliceblue;
+    margin: 5px;
+    padding: 3px;
 }
 #precos{
     display: flex;
