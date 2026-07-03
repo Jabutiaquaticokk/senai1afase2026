@@ -94,3 +94,109 @@ function feriado(){
 function remover(){
     semana.pop()
 }
+let parN=[2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+function par(){
+    document.getElementById('resultados2').innerHTML=' '
+    for(let i=0;i<parN.length;i++){
+        if(i==2){
+            parN[2]=12
+        }
+        document.getElementById('resultados2').innerHTML+=parN[i]+' - '
+        
+    }
+}
+let fruits=['banana', 'maçã', 'uva']
+function frutas(){
+    document.getElementById('resultados2').innerHTML=' '
+    for(let i=0;i<fruits.length;i++){
+        document.getElementById('resultados2').innerHTML+=fruits[i]+', '
+
+    }
+}
+
+function admorango(){
+    fruits.push('morango')
+}
+
+function removeFruta(){
+    console.log(fruits);
+    
+    fruits.splice(1,1)
+    console.log(fruits);
+}
+let friends=['Pedro', 'Ronaldo', 'Genésio']
+let fredis=['Yan', 'Rodolfo', 'Gui']
+let ageFrends=[17,27,42,16,15]
+function amigos(){
+    for(let i=0;i<friends.length;i++){
+        document.getElementById('resultados2').innerHTML+=friends[i]+', '+fredis[i]+', '
+
+    }
+}
+function amigosIdade(){
+    for(let i=0;i<ageFrends.length;i++){
+        document.getElementById('resultados2').innerHTML+=ageFrends[i]+', '
+
+    }
+}
+
+function amigosSoma(){
+    let amigosSoma
+    amigosSoma=ageFrends[0]+ageFrends[1]
+    document.getElementById('resultados2').innerHTML+=ageFrends[0]+' + '+ageFrends[1]+' = '+amigosSoma
+}
+
+function mediaIdade(){
+    let media=0
+    let medidade
+    for(let i=0;i<ageFrends.length;i++){
+       media= media+ageFrends[i] 
+
+    }
+    medidade=media/ageFrends.length
+    document.getElementById('resultados2').innerHTML=medidade
+}
+
+let compras=['Maçãs', 'Pão', 'Leite']
+
+function listaCompras(){
+    document.getElementById('resultados2').innerHTML=' '
+    for(let i=0;i<compras.length;i++){
+       document.getElementById('resultados2').innerHTML+=compras[i]+'-'
+
+    }
+
+}
+
+function itemCompra(){
+    compras.push('Sabonete')
+    compras.push('Arroz')
+
+}
+
+function removeCompra(){
+    compras.splice(2,1)
+    let contemPao=compras.includes('Pão')
+    console.log(contemPao)
+}
+let n=[]
+function loop(){
+    let i=-1
+    let o=0
+    do{
+        i+=2
+        n.push(i)
+    }while(n.length<5)
+    console.log(n);
+    do{
+        n[o]=n[o]*2
+        o++
+    }while(o<n.length)
+    console.log(n);
+    
+}
+
+let city=['Jaraguá', 'Joinville', 'Blumenau']
+function santacatarina(){
+    document.getElementById('resultados2').innerHTML='Talvez esteja em '+city[0]+', '+city[1]+' ou '+city[2]+'. Lá por Santa Catarina[...]'
+}
