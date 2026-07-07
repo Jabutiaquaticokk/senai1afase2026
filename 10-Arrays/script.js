@@ -205,5 +205,5 @@ function santacatarina(){
 const personagens=['Guilherme', 'Lurian', 'Baiano','Lauan','Gabriel','Renan']
 
 function buscarIndice(){
-
+    
 }
