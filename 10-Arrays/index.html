@@ -44,7 +44,7 @@
     <hr>
     <h2>resultados aqui</h2>
         <div id="resultados2"></div>
-        <hr>
+        <!-- <hr>
         
         <div id="lista"></div>
         <select id="seletor"></select>
@@ -63,16 +63,16 @@
         const seletor = document.getElementById("seletor");
 
         personagens.forEach((nome, i) => {
-            const celula = document.createElement("div");
-            celula.className = "celula";
-            celula.id = "item" + i;
-            celula.innerHTML = `<span class="valor">${nome}</span><class="idx">[${i}]</span>`;
-            lista.appendChild(celula);
+            const celula = document.createElement("div");//cria uma div dentro do HTML
+            celula.className = "celula";//da uma classe a div
+            celula.id = "item" + i;//da um id a celula
+            celula.innerHTML = `<span class="valor">${nome}</span><class="idx">[${i}]</span>`;//muda um elemento na classe
+            lista.appendChild(celula);//empurra todas as modificações para a const lista
 
-            const opt = document.createElement("option");
+            const opt = document.createElement("option");//cria um elemento de opção
             opt.value = nome;
             opt.textContent = nome;
-            seletor.appendChild(opt);
+            seletor.appendChild(opt);//empurra todas as modificações para o seletor
         });
 
         function buscarIndice() {
@@ -81,11 +81,18 @@
             const indice = personagens.indexOf(nomeEscolhido);
             document.getElementById("resultado").textContent =
 
-                `"${nomeEscolhido}" está no indice ${indice}`;
-            document.getElementById("item" + indice).classList.add("destaque");
+                `"${nomeEscolhido}" está no indice ${indice}`;//mostra a lista de nomes e seus respectivos numeros
+            document.getElementById("item" + indice).classList.add("destaque");//envia a seleção 
 
         }
-    </script>
+    </script> -->
+    <hr>
+        <h2>Lista de espera</h2>
+        <div id="lista"></div>
+        <select id="seletor"></select>
+        <div class="array-container" id="lista"></div>
+        <button onclick="buscarIndice()">Buscar Indice</button>
+        <div id="resultado"></div>
 
     <script src="script.js"></script>
 </body>

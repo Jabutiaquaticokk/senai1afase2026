@@ -201,3 +201,9 @@ function santacatarina(){
     document.getElementById('resultados2').innerHTML='Talvez esteja em '+city[0]+', '+city[1]+' ou '+city[2]+'. Lá por Santa Catarina[...]'
 }
    
+//busca de indice
+const personagens=['Guilherme', 'Lurian', 'Baiano','Lauan','Gabriel','Renan']
+
+function buscarIndice(){
+
+}
