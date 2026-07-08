@@ -26,7 +26,7 @@ button:hover{
 }
 
 select{
-    background-color: dimgrey;
+    background-color: rgb(63, 63, 63);
     color: aliceblue;
     padding: 5px;
     margin: 2px;
@@ -37,6 +37,5 @@ select{
 
 select:hover{
     scale: 1.01;
-    rotate: 1deg;
     box-shadow: 1px 1px 10px;
 }
