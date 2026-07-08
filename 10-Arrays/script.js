@@ -202,8 +202,58 @@ function santacatarina(){
 }
    
 //busca de indice
-const personagens=['Guilherme', 'Lurian', 'Baiano','Lauan','Gabriel','Renan']
+const personagens=['Guilherme', 'Lurian', 'Baiano','Lauan','Gabriel','Renan'];
+
+const lista = document.getElementById("lista");
+const seletor = document.getElementById("seletor");
+
+
+
+for(let i=0;i<personagens.length;i++){;
+    const nome=personagens[i];
+    const celula=document.createElement('div');
+    celula.className='celula';
+    celula.id='item - '+i;
+    celula.innerHTML=`<span class='valor'>${nome}</span><span class='idx'>[${i}]</span>`;
+    lista.appendChild(celula);
+
+    const opt=document.createElement('option');
+    opt.value=nome
+    opt.textContent=nome
+    seletor.appendChild(opt)
+    
+
+}
 
 function buscarIndice(){
+    const celulas=document.querySelectorAll('.celula')
+    for(let i=0;i<celulas.length;i++){
+        celulas[i].classList.remove('destaque')
+    }
+        const nomeEscolhido=seletor.value
+
+        let indice= -1
+        let n=0
+        while(n<personagens.length){
+            if(personagens[n]===nomeEscolhido){
+                indice=n;
+                break;
+            }n++;
+        }
+    
+
+    document.getElementById('resultado').textContent=`'${nomeEscolhido}' está no indice ${indice}`;
+   document.getElementById("item - " + indice).classList.add("destaque"); 
+}
+
+function addnome(){
+    let novoNome= ''
+   novoNome=document.getElementById('input').value
+    console.log(novoNome);
+    
+    let i=personagens.length
+    personagens.push(novoNome)
+    document.getElementById("lista").innerHTML+=personagens[i]+'['+i+']'
+    
     
 }

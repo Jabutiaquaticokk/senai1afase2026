@@ -24,3 +24,19 @@ button:hover{
     rotate: 1deg;
     box-shadow: 1px 1px 10px;
 }
+
+select{
+    background-color: dimgrey;
+    color: aliceblue;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    border: none;
+    transition: 250ms;
+}
+
+select:hover{
+    scale: 1.01;
+    rotate: 1deg;
+    box-shadow: 1px 1px 10px;
+}
