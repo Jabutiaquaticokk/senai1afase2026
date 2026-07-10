@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Operações de Arrays de Personagens</h1>
+    <hr>
+    <div id="lista">
+        <h2>Lista</h2>
+        <hr>
+    </div>
+    <div>
+    <p>1.Verificar se '<label>Kowalski</label>' está presente <button onclick="check()">EXECUTAR</button> </p>
+    <p>2.Descobrir o Indice de '<label>Padre Ernam Buco</label>' <button onclick="indexCheck()">EXECUTAR</button> </p>
+    <p>3.Remover "GENéZio" com splice<label>()</label> <button onclick="removerGenesio()">EXECUTAR</button> </p>
+    <p>4.Inverte a Ordem do Array <button onclick="inverte()">EXECUTAR</button> </p>
+</div>
+    <div id="resultados">
+        <h3><label id="cmd">>.</label>Terminal</h3>
+        <hr>
+        <label >>.</label> <br>
+    </div>
+
+
+    <script>
+        const nomes=['Robesvaldo','Padre Ernam Buco','Kowalski','GENéZio','Gill Bates','Neymar']
+
+        for(let i=0;i<nomes.length;i++){
+            document.getElementById('lista').innerHTML+='<p>'+nomes[i]+'[<label>'+i+'</label>]'+'</p>'
+        }
+        function check(){
+            const kowalskiCheck=nomes.includes('Kowalski')
+            document.getElementById('resultados').innerHTML+=">. "+'nomes.includes<label>("Kowalski")</label>'+' = <label>'+kowalskiCheck+'</label><br>'
+        }
+        function indexCheck(){
+            const indice=nomes.indexOf('Padre Ernam Buco')
+            document.getElementById('resultados').innerHTML+=">. "+'nomes.indexOf<label>("Padre Ernam Buco")</label>'+' = <label>'+indice+'</label><br>'
+        }
+        function removerGenesio(){
+            document.getElementById('lista').innerHTML=''
+            const remove=nomes.splice(3,1)
+            for(let i=0;i<nomes.length;i++){
+                document.getElementById('lista').innerHTML  +='<p>'+nomes[i]+'[<label>'+i+'</label>]'+'</p>'
+            }
+            document.getElementById('resultados').innerHTML+=">. "+'nomes.splice<label>(3,1)</label>'+' = '+'removed "<label>'+remove+'</label>"'+'<br>'
+        }
+        function inverte(){
+            document.getElementById('lista').innerHTML=''
+            nomes.reverse()
+                for(let i=0;i<nomes.length;i++){
+                    document.getElementById('lista').innerHTML  +='<p>'+nomes[i]+'[<label>'+i+'</label>]'+'</p>'
+                }
+            document.getElementById('resultados').innerHTML+=">. "+'nomes.reverse<label>()</label>'+'<br>'
+        }
+    </script>
+</body>
+</html>
