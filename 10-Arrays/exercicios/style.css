@@ -1,4 +1,6 @@
 *{
+    
+    box-sizing: border-box;
     font-family: monospace;
 }
 
@@ -50,4 +52,13 @@ hr{
 
 h1{
     text-align: center;
+}
+
+#clima{
+    text-align: left;
+    padding: 7px;
+    border: inset;
+    border-radius: 8px;
+    border-color: deepskyblue;
+    background-color: dodgerblue;
 }
