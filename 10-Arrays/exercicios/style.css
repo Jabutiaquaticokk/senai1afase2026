@@ -1,0 +1,53 @@
+*{
+    font-family: monospace;
+}
+
+body{
+    background-color: black;
+    color: azure;
+}
+
+button{
+    background-color: dimgrey;
+    color: aliceblue;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    border: none;
+    transition: 250ms;
+    font-weight: 500;
+    gap: 5px;
+}
+
+button:hover{
+    scale: 1.01;
+    rotate: 1deg;
+    box-shadow: 1px 1px 10px;
+}
+
+select{
+    background-color: rgb(63, 63, 63);
+    color: aliceblue;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    border: none;
+    transition: 250ms;
+}
+
+select:hover{
+    scale: 1.01;
+    box-shadow: 1px 1px 10px;
+}
+
+hr{
+    width: 20%;
+    padding: 3px;
+    border-radius: 3px;
+    border: none;
+    background-color: azure;
+}
+
+h1{
+    text-align: center;
+}
