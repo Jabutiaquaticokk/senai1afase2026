@@ -1,7 +1,7 @@
 *{
     
     box-sizing: border-box;
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 body{
@@ -10,12 +10,13 @@ body{
 }
 
 button{
-    background-color: dimgrey;
+    background-color: rgb(0, 0, 0);
     color: aliceblue;
     padding: 5px;
     margin: 2px;
     border-radius: 5px;
-    border: none;
+    border: inset;
+    border-color: chartreuse;
     transition: 250ms;
     font-weight: 500;
     gap: 5px;
@@ -44,21 +45,26 @@ select:hover{
 
 hr{
     width: 20%;
+    margin-left: 3%;
     padding: 3px;
     border-radius: 3px;
     border: none;
-    background-color: azure;
+    background-color: rgb(21, 255, 0);
 }
 
 h1{
-    text-align: center;
+    margin-left: 2%;
 }
 
-#clima{
+h2{
     text-align: left;
     padding: 7px;
     border: inset;
     border-radius: 8px;
-    border-color: deepskyblue;
-    background-color: dodgerblue;
+    border-width: 2px;
+    border-start-end-radius: initial;
+    margin-right: 67%;
+    margin-left: 3%;
+    border-color: rgb(9, 255, 0);
+    background-color: rgb(0, 0, 0);
 }
