@@ -31,35 +31,35 @@ const nomes=[{
     nome: "Tiranossauro Rex",
     altura: "6.0",
     cor: "Verde e Marrom",
-    valor: "50000"
+    valor: "500"
   },
   {
     id: 1715688000002,
     nome: "Tricerátops",
     altura: "3.0",
     cor: "Cinza",
-    valor: "35000"
+    valor: "35"
   },
   {
     id: 1715688000003,
     nome: "Velociraptor",
     altura: "1.5",
     cor: "Bege com listras",
-    valor: "25000"
+    valor: "250"
   },
   {
     id: 1715688000004,
     nome: "Braquiossauro",
     altura: "15.0",
     cor: "Verde claro",
-    valor: "80000"
+    valor: "80"
   },
   {
     id: 1715688000005,
     nome: "Estegossauro",
     altura: "4.0",
     cor: "Marrom com placas alaranjadas",
-    valor: "40000"
+    valor: "40"
   }]
 
 
@@ -86,7 +86,13 @@ function cadastrar(){
 }
 
 function mostrarDados(){
+  document.getElementById('p-dados').innerHTML=''
     for(let i=0;i<nomes.length;i++){
-        document.getElementById('p-dados').innerHTML+='ID: #'+nomes[i].id+'<br>NOME: '+nomes[i].nome+'<br>ALTURA: '+nomes[i].altura+'cm<br>COR: '+nomes[i].cor+'<br>VALOR: R$'+nomes[i].valor+'<br><hr>'
+        document.getElementById('p-dados').innerHTML+='<div class="card-dino"><h3>'+nomes[i].nome+'</h3>ID: <label>#'+nomes[i].id+'</label><br>'+'<ALTURA: '+nomes[i].altura+'cm<br>COR: '+nomes[i].cor+'<br>VALOR: R$'+nomes[i].valor+'.00<br><hr></div>'
     }
+}
+
+function removerDino(){
+ 
+  
 }
