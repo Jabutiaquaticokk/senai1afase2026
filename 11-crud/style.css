@@ -1,3 +1,27 @@
+:root {
+  /* 🌿 Tons de Selva (Cores Principais) */
+  --dino-verde-escuro: #2b5329;    /* Floresta densa - Ótimo para o cabeçalho/navbar */
+  --dino-verde-folha: #4caf50;     /* Folha de samambaia - Bom para botões principais */
+  --dino-verde-claro: #81c784;     /* Destaques sutis e efeitos hover */
+
+  /* 🦖 Tons Terrosos (Cores Secundárias) */
+  --dino-terra-fossil: #8d6e63;    /* Marrom escavação - Detalhes, ícones e bordas */
+  --dino-areia: #d7ccc8;           /* Areia de escavação - Fundos de seções secundárias */
+
+  /* 🌋 Cores de Destaque (Para chamar a atenção) */
+  --dino-alerta-vulcao: #ff7043;   /* Laranja vulcânico - Etiquetas de "Novo" ou "Promoção" */
+  --dino-destaque-rex: #ef5350;    /* Vermelho vibrante - Botões de compra ou alertas */
+
+  /* 🦴 Tons Neutros (Fundo e Texto) */
+  --dino-fundo-osso: #fbf9f6;      /* Off-white quente - Fundo principal do site */
+  --dino-texto-obsidiana: #212121; /* Cinza escuro (quase preto) - Texto principal (leitura fácil) */
+  --dino-texto-pedra: #757575;     /* Cinza médio - Textos secundários, rodapé ou legendas */
+
+  
+}
+
+
+
 *{
     font-family: 'Courier New', Courier, monospace;
 }
@@ -5,6 +29,8 @@
 body{
     background-color: black;
     color: azure;
+    display: block;
+    flex-direction: column;
 }
 
 h1{
