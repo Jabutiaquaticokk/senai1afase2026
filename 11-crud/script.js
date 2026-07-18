@@ -3,29 +3,6 @@
 // U >> UPDATE 
 // D >> DELETE
 
-// let dino={
-//     nome: "T-Rex",
-//     altura: 3.5,
-//     cor: "Verde",
-//     valor: 1000000
-    
-
-// }
-
-// console.log(dino);
-// const dinos=[]
-
-// function teste(){
-//     let dino={
-//     nome: "T-Rex",
-//     altura: 3.5,
-//     cor: "Verde",
-//     valor: 1000000
-//     }
-
-//     dinos.push(dino)
-// }
-
 const nomes=[{
     id: 1715688000001,
     nome: "Tiranossauro Rex",
