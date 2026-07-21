@@ -67,6 +67,7 @@ function mostrarDados(){
     for(let i=0;i<nomes.length;i++){
         document.getElementById('p-dados').innerHTML+='<div class="card-dino"><h3>'+nomes[i].nome+'</h3>ID: <label>#'+nomes[i].id+'</label><br>'+'<ALTURA: '+nomes[i].altura+'cm<br>COR: '+nomes[i].cor+'<br>VALOR: R$'+nomes[i].valor+'.00<br><hr></div>'
     }
+    save()
 }
 
 function limparForm(){
@@ -103,6 +104,7 @@ function salvar(){
       nomes[i].id=document.getElementById('input-id').value
     }
   }
+  
   mostrarDados()
   limparForm()
 }
@@ -120,4 +122,13 @@ function removerDino(){
   mostrarDados()
   limparForm()
   
+}
+
+function save(){
+  localStorage.setItem('dinos',JSON.stringify(nomes))
+}
+
+function carregarDados(){
+  nomes=JSON.parse(localStorage.getItem('dinos'))
+  console.log(nomes)
 }
